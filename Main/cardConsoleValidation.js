@@ -1,3 +1,3 @@
-const cardValidate = /^\d{4,}.\d{4,}.\d{4,}.\d{4,}/.test("2345 2345 2376 6546");
+const cardValidate = /^4[0-9]{12}(?:[0-9]{3})?$/.test("4222222222222");
 
 console.log(cardValidate);
