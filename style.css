@@ -1,0 +1,12 @@
+.card-img {
+  width: 5rem;
+  cursor: pointer;
+}
+
+.subBtn {
+  background-color: orange;
+  border: 3px #fff solid;
+  box-shadow: 5px 5px 3px #0000002c;
+  color: #fff;
+  font-weight: bold;
+}
