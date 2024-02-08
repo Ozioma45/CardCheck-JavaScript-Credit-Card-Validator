@@ -38,8 +38,10 @@
         </div>
 
         <div class="mt-3">
-          <label for="holderName" class="fw-bold">CardHolder Name</label><br />
+          ` <label for="holderName" class="fw-bold">CardHolder Name</label
+          ><br />
           <input type="text" id="holderName" name="holderName" class="w-75" />
+          <p>Username must include your firstname, middlename and lastname</p>
         </div>
 
         <div class="mt-3">
@@ -50,6 +52,7 @@
             name="cardNumber"
             class="w-75"
             placeholder="0000 0000 0000 0000" />
+          <p>Please enter your 16-digit card number</p>
         </div>
 
         <div class="mt-3 d-flex">
@@ -59,8 +62,13 @@
           </span>
 
           <span
-            ><label for="CVV" class="fw-bold">CVV</label><br />
-            <input type="CVV" id="CVV" name="date" class="w-25" />
+            ><label for="cvv" class="fw-bold">CVV</label><br />
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              class="w-25"
+              placeholder="000" />
           </span>
         </div>
 
@@ -68,6 +76,7 @@
       </form>
     </main>
 
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
