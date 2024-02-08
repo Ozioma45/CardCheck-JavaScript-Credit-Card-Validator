@@ -40,16 +40,39 @@ inputs.forEach((input) => {
 });
  */
 
+// Formatting card number input
+// Formatting card number input and removing spaces for validation
+document
+  .getElementById("cardNumber")
+  .addEventListener("input", function (event) {
+    let input = event.target;
+    let value = input.value.replace(/\s/g, ""); // Remove existing spaces
+    let formattedValue = "";
+
+    for (let i = 0; i < value.length; i++) {
+      if (i % 4 === 0 && i !== 0) {
+        formattedValue += " ";
+      }
+      formattedValue += value[i];
+    }
+
+    input.value = formattedValue;
+  });
+
 // Regex patterns for validation
 const patterns = {
   holderName: /^\S+ \S+ \S+$/,
+  cardNumber: /^\d{16}$/, // Default pattern for card number
   visaCardNumber: /^4[0-9]{12}(?:[0-9]{3})?$/,
   mastercardNumber: /^5[1-5][0-9]{14}$/,
+  cvv: /^\d{3}$/,
 };
 
 // Function to validate input fields
 function validate(field, regex) {
-  if (regex.test(field.value)) {
+  // Remove spaces before testing
+  const valueWithoutSpaces = field.value.replace(/\s/g, "");
+  if (regex.test(valueWithoutSpaces)) {
     console.log("Regex is valid");
   } else {
     console.log("Regex is not valid");
