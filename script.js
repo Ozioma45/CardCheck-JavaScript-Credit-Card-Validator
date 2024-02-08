@@ -70,12 +70,21 @@ const patterns = {
 
 // Function to validate input fields
 function validate(field, regex) {
-  // Remove spaces before testing
-  const valueWithoutSpaces = field.value.replace(/\s/g, "");
-  if (regex.test(valueWithoutSpaces)) {
-    console.log("Regex is valid");
+  if (field.name === "holderName") {
+    // Skip removing spaces for holderName field
+    if (regex.test(field.value)) {
+      console.log("Regex is valid");
+    } else {
+      console.log("Regex is not valid");
+    }
   } else {
-    console.log("Regex is not valid");
+    // Remove spaces before testing
+    const valueWithoutSpaces = field.value.replace(/\s/g, "");
+    if (regex.test(valueWithoutSpaces)) {
+      console.log("Regex is valid");
+    } else {
+      console.log("Regex is not valid");
+    }
   }
 }
 
