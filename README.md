@@ -49,8 +49,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- This project was inspired by the need to create a simple credit card validator.
-- Special thanks to contributors and open-source projects used in this project.
+This project was developed as part of the Learnable Internship training from [Genesys Tech Hub](https://www.genesystechhub.com/). Special thanks to the mentors and contributors involved in the training.
 
 ## Author
 
