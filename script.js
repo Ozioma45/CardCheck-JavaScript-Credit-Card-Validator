@@ -73,17 +73,17 @@ function validate(field, regex) {
   if (field.name === "holderName") {
     // Skip removing spaces for holderName field
     if (regex.test(field.value)) {
-      console.log("Regex is valid");
+      field.className = "valid";
     } else {
-      console.log("Regex is not valid");
+      field.className = "invalid";
     }
   } else {
     // Remove spaces before testing
     const valueWithoutSpaces = field.value.replace(/\s/g, "");
     if (regex.test(valueWithoutSpaces)) {
-      console.log("Regex is valid");
+      field.className = "valid";
     } else {
-      console.log("Regex is not valid");
+      field.className = "invalid";
     }
   }
 }

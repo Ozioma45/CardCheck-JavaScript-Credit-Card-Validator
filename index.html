@@ -24,7 +24,7 @@
             <img
               src="img/dw.png"
               alt="Visa card Logo"
-              class="img-fluid card-img md-w-25" />
+              class="img-fluid card-img" />
           </label>
           <!-- Second card option -->
           <input
@@ -43,17 +43,21 @@
         <div class="mt-3">
           ` <label for="holderName" class="fw-bold">CardHolder Name</label
           ><br />
-          <input type="text" id="holderName" name="holderName" class="w-75" />
+          <input
+            type="text"
+            id="holderName"
+            name="holderName"
+            class="w-75 textInput" />
           <p>Username must include your firstname, middlename and lastname</p>
         </div>
 
-        <div class="mt-3">
+        <div>
           <label for="cardNumber" class="fw-bold">Card Number</label><br />
           <input
             type="text"
             id="cardNumber"
             name="cardNumber"
-            class="w-75"
+            class="w-75 textInput"
             placeholder="0000 0000 0000 0000" />
           <p id="cardNumberInstruction">
             Please enter your 16-digit card number
@@ -63,17 +67,12 @@
         <div class="mt-3 d-flex">
           <span
             ><label for="date" class="fw-bold">MM/YY</label><br />
-            <input type="month" id="date" name="date" class="w-75" />
+            <input type="month" id="date" name="date" class="w-75 textInput" />
           </span>
 
           <span
             ><label for="cvv" class="fw-bold">CVV</label><br />
-            <input
-              type="text"
-              id="cvv"
-              name="cvv"
-              class="w-25"
-              placeholder="000" />
+            <input type="text" id="cvv" name="cvv" placeholder="000" />
           </span>
         </div>
 
