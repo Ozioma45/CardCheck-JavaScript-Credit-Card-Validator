@@ -1,3 +1,7 @@
+body {
+  width: 100%;
+}
+
 .card-img {
   width: 5em;
   cursor: pointer;
@@ -14,6 +18,15 @@
 input {
   border: 3px solid #ccc;
   outline: none !important;
+  font-size: 1em;
+}
+
+input#textInput {
+  width: 100%;
+}
+
+input#cvv {
+  width: 50%;
 }
 
 /*Validation style*/
@@ -36,4 +49,8 @@ input + p {
 input.invalid + p {
   opacity: 1;
   height: auto;
+}
+
+input.cvv:-ms-keyboard-active {
+  width: 50% !important;
 }

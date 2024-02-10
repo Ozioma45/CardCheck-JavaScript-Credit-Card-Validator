@@ -15,7 +15,7 @@
   <body>
     <main class="d-flex flex-column justify-content-center align-items-center">
       <h1>Credit Card Validator</h1>
-      <form class="mb-5 mt-3 mw-50 min-vw-50 p-5 shadow">
+      <form class="mb-5 mt-3 p-5 shadow">
         <div>
           <p>Select your Card Type:</p>
           <!-- First card option -->
@@ -43,11 +43,7 @@
         <div class="mt-3">
           ` <label for="holderName" class="fw-bold">CardHolder Name</label
           ><br />
-          <input
-            type="text"
-            id="holderName"
-            name="holderName"
-            class="w-75 textInput" />
+          <input type="text" id="holderName" name="holderName" id="textInput" />
           <p>Username must include your firstname, middlename and lastname</p>
         </div>
 
@@ -57,22 +53,21 @@
             type="text"
             id="cardNumber"
             name="cardNumber"
-            class="w-75 textInput"
             placeholder="0000 0000 0000 0000" />
           <p id="cardNumberInstruction">
             Please enter your 16-digit card number
           </p>
         </div>
 
-        <div class="mt-3 d-flex">
+        <div class="mt-3 d-flex w-100">
           <span
             ><label for="date" class="fw-bold">MM/YY</label><br />
-            <input type="month" id="date" name="date" class="w-75 textInput" />
+            <input type="month" id="date" name="date" class="textInput w-75" />
           </span>
 
           <span
             ><label for="cvv" class="fw-bold">CVV</label><br />
-            <input type="text" id="cvv" name="cvv" placeholder="000" />
+            <input type="text" id="cvv" name="cvv" placeholder="000" id="cvv" />
           </span>
         </div>
 
